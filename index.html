@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="dIkaps">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- awal container -->
+  <div class="container">
+    <!-- awal panel -->
+    <div class="panel">
+      <!-- awal panel-logo -->
+      <div class="panel-logo">
+        <img src="assets/images/toga.png" alt="toga png">
+      </div>
+      <!-- akhir panel logo -->
+
+      <!-- awal panel-body -->
+      <div class="panel-body">
+        <form method="POST" action="../../component/proses_login.php" autocomplete="off">
+          <label for=" username">Username</label>
+          <input type="text" name="username" id="username" class="form-control" placeholder="NIM" reuqired>
+
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="form-control" placeholder="4 angka terakhir NIM"
+            reuqired>
+          <div class="group">
+            <input type="checkbox" class="form-check">
+            <span class="fa fa-eye" id="icon"></span>
+          </div>
+
+          <!-- <input type="submit" value="Login" class="btn"> -->
+          <!-- <a href="beranda.html" class="btn">login</a> -->
+          <input type="submit" value="login" class="btn">
+        </form>
+      </div>
+      <!-- akhir panel-body -->
+    </div>
+    <!-- akhir panel -->
+  </div>
+  <!-- akhir container -->
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

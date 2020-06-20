@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto', serif;
+  transition: all .3s;
+}
+
+/* umum */
+
+body {
+  background-color: #FCF9F9;
+  color: #807D7D;
+  /* overflow: hidden; */
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+  /* border: 2px solid rgba(0, 0, 0, .5); */
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #7379D1;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: 900;
+  outline: none;
+  border: 0;
+  color: #FFFFFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+
+.btn:active {
+  position: relative;
+  top: 3px;
+  left: 5px;
+  box-shadow: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 18px;
+  font-weight: 900;
+  color: #807D7D;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 400px;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background: none;
+  border: 1px solid #807D7D;
+  border-radius: 5px;
+  outline: none;
+  color: #807D7D;
+  margin-bottom: 25px;
+  font-size: 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* style for login page */
+.panel {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  position: relative;
+}
+
+.panel-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.panel-logo img {
+  width: 250px;
+  margin-bottom: 23px;
+}
+
+.panel-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.group {
+  position: absolute;
+  bottom: 15.5%;
+  right: 15%;
+}
+
+.form-check {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+#icon {
+  font-size: 20px;
+  color: inherit;
+}
+
+/* responsive breakpoint */
+@media screen and (max-width: 576px) {
+  .panel {
+    width: 300px;
+  }
+  .form-control {
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+  }
+}
